@@ -1,0 +1,189 @@
+body { font-family: Garamond;
+  background-color:rgb(0, 0, 0);
+  margin:0px;
+} 
+
+ a {text-decoration-line:none;
+
+}
+
+/* navigation and header styles */
+
+a.logo {color:white;
+text-decoration-line:;
+text-transform: uppercase;
+font-family:Oswald;
+font-weight: 900;
+font-size:25px;
+margin-left:25px;
+margin-top:15px}
+
+.header-container {
+position:fixed;
+width:100%;
+background-color:rgb(60, 60, 60);
+margin-top:-25px;
+padding-top:40px;
+z-index: 99;
+top: 0;
+box-shadow: 0px 10px 10px rgb(60, 60, 60);
+display:flex;
+justify-content: space-between;
+}
+
+ul.nav-list{
+    border: 0px solid rgb(23, 135, 47); 
+    display: flex; 
+}
+
+ul.nav-list li { margin-right:20px;list-style-type: none;  
+
+ color: black;
+
+border-radius:20px;}
+
+
+ul.nav-list li a{ 
+padding:12px;
+color: rgb(223, 244, 231);
+font-size:16px;
+}
+
+.logo{text-transform: uppercase;
+color:white;}
+
+ul.nav-list .sub-menu {
+background-color:rgb(71, 49, 102);
+display:none;}
+
+ul.nav-list li a:hover{ 
+background-color:rgb(146, 67, 67);
+border-radius:20px;}
+
+
+ul.sub-menu li{color:red;
+}
+
+/* END navigation and header styles */
+
+.hero-image
+{background-image: url("/assets/italy1.png");
+min-height: 400px;
+background-size: cover;
+width:100%;
+display: flex;
+align-items: flex-end;
+margin-top:11vh;
+}
+
+.hero-image h1{
+color: white;
+font-size: 50px;
+width:100%;
+z-index: 1;
+padding:20px;
+background-color: rgba(0, 0, 0,0.7);
+margin-bottom: 0;
+text-transform: uppercase;
+font-family:Oswald;
+font-weight: 900;
+}
+
+ul.nav-list li {font-family:Tahoma;padding-bottom: 5px;font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6{color:rgb(185, 185, 185); font-family:Tahoma ;
+
+border: 0px solid rgb(206, 206, 206); 
+;}
+
+p {line-height: 1.4;font-size: 22px;
+color:white;
+font-family:Verdana;
+font-weight:normal;
+font-size: 18px;}
+
+ul, ol {
+    padding: 10px; list-style-type: square;
+border: 0px solid rgb(206, 206, 206); 
+width: 400px;
+}
+
+ul li {padding-bottom: 5px; border: 0px solid rgb(206, 206, 206); 
+font-size:20px}
+
+main.container {width: 100%; margin: 0 auto; padding: 20px; max-width:1100px}
+
+.body-list li{
+  
+  font-family:Tahoma;
+  color:color:rgb(185, 185, 185)}
+
+/* flex and grid styles for cards */
+
+.flex-demo{
+  
+ display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+  align-items: flex-start;
+}
+.flex-demo .card{
+  background: rgb(54, 54, 54);
+
+  color: white;
+  
+  flex-grow:0;
+  flex-shrink:0;
+  flex-basis:25%;
+  box-sizing: border-box;
+  padding:15px;
+  
+}
+ 
+.card img{
+    border-radius: 8px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h4 {
+color:white;
+ margin: 12px 0 6px;
+ font-size: 22px;
+
+}
+ .card p {
+
+font-size:14px
+
+ }
+.card button {
+ margin-top: 7px;
+ padding: 10px 12px;
+ border: 0;
+ border-radius: 8px;
+ cursor: pointer;
+ font-family: Georgia, serif;
+
+}
+
+.grid-demo {
+ display: grid;
+ grid-template-columns: 33% 33%;
+ gap: 20px;
+
+}
+
+.grid-demo .card{
+  background: rgb(131, 74, 74);
+  border: 2px dotted green;
+  color: white;
+  flex: 0 0 250px;   
+  box-sizing: border-box;
+  padding:15px;
+}
+
+/* end of flex and grid styles for cards */
